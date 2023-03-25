@@ -2,16 +2,16 @@ from subprocess import check_output
 import telebot
 import time
 
-chats = <message.chat.id> 				# Параметр ID чата из API Telegram
+chats = <message.chat.id>           # Параметр ID чата из API Telegram
 
 msg_for_welcome = ("<текст>")		    # Произвольный текст приветствия пользователя
-msg_for_customs = ("<текст>") 		    # Произвольный текст для ввода команды
-msg_for_protect = ("<текст>") 	        # Произвольный текст запрета использования бота
+msg_for_customs = ("<текст>") 		  # Произвольный текст для ввода команды
+msg_for_protect = ("<текст>") 	    # Произвольный текст запрета использования бота
 msg_for_help = ("<текст>") 			    # Произвольный текст интрукций к боту
 
-cmd_for_pods = ("<текст команды>")	    # Произвольная команда 
+cmd_for_pods = ("<текст команды>")	# Произвольная команда 
 
-cmd_list = {						    # Список команд бота и названия функций
+cmd_list = {						            # Список команд бота и названия функций
   '/start@<название_бота>':'welcome',
   '/pods@<название_бота>':'pods',
   '/custom@<название_бота>':'customs',
